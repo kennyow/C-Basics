@@ -56,5 +56,5 @@ scanf("%d", &y);
 printf("Inserisci il terzo numero intero:\n");
 scanf("%d", &z);
 
-printf("Il numero piu grande tra i tre inseriti ( %d, %d e %d ) e: %d\n", x, y, z, compare(x, y, z) );
+printf("Il numero piu grande tra i tre inseriti ( %d, %d e %d ) e: %d!\n", x, y, z, compare(x, y, z) );
 }
