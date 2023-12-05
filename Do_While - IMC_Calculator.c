@@ -1,35 +1,35 @@
 #include<stdio.h>
-#include <locale.h>
+//#include <locale.h>
 
 int main()
 
 {
 
-setlocale(LC_ALL,"portuguese");
-float altura,peso,imc;
+//setlocale(LC_ALL,"portuguese");
+float altezza,peso,imc;
 char resp;
 
 do{
- printf("Digite sua altura\n");
- scanf("%f",&altura);
+ printf("Inserisci la tua altezza: \n");
+ scanf("%f",&altezza);
 
- printf("digite seu peso\n");
+ printf("Inserisci il tuo peso: \n");
  scanf("%f",&peso);
 
- imc = peso / (altura * altura);
+ imc = peso / (altezza * altezza);
 
- printf ("Seu imc é: %f e você está ",imc);
+ printf ("Il tuo IMC: %f\nSei ",imc);
 
  if(imc < 18){
- printf("Abaixo do peso\n");
+ printf("sotto peso.\n");
  }
  else if(imc > 25){
- printf("Acima do peso\n");
+ printf("sovrappeso.\n");
  }
  else{
- printf("No peso ideal\n");
+ printf("nel peso ideale\n");
  }
- printf("Novo cálculo ? digite s ou n\n");
+ printf("Desidera fare un altro calcolo? S/N\n");
  scanf(" %c",&resp);
 }while(resp == 's');
 }
